@@ -1,0 +1,37 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package praktikum9_zikwan;
+
+/**
+ *
+ * @author Praktikan
+ */
+public class Praktikum9_zikwan {
+    //Atribut Static dan Non
+   public String atributBukanStatic = "Atribut Bukan Static";
+   static String atributStatic = "Atribut Static";
+   //method static dan non
+   public void bukanStatic(){
+       System.out.println("Bukan Static");
+   }
+   public static void methodStatic(){
+       System.out.println("Method Static");
+   }
+   
+   
+    public static void main(String[] args)
+   {
+       //Objek Untuk Atribut dan Method Bukan Static
+       Praktikum9_zikwan praktikum = new Praktikum9_zikwan();
+       //Memanggil Atribut Static dan Non
+       System.out.println(praktikum.atributBukanStatic);
+       System.out.println(atributStatic);
+       //Memanggil Method Static dan Non Static
+       praktikum.bukanStatic();
+       methodStatic();
+       
+   }
+  }
