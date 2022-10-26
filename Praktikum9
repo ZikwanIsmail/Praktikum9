@@ -35,3 +35,52 @@ public class Praktikum9_zikwan {
        
    }
   }
+
+
+//Exercise
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package praktikum9_2;
+
+/**
+ *
+ * @author Praktikan
+ */
+public class Praktikum9_2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        System.out.println(Tabung.Volume(13, 30));
+        System.out.println(Tabung.LuasPermukaan(13, 30));
+    }
+    
+}
+//Class Exercise
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package praktikum9_2;
+
+/**
+ *
+ * @author Praktikan
+ */
+public class Tabung {
+        private static final double pi = Math.PI ;
+    public static double Volume(double r, double t){
+    double volume =  pi * r * r * t ;
+    return volume;
+    }
+    public static double LuasPermukaan(double r, double t){
+  double luasPermukaan = (2 * pi * r * (r + t));
+  return luasPermukaan;
+    }
+}
+
